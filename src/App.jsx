@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { content } from "./data/data";
 import "./App.css";
 import Logo from "./abou.png";
+import Hero from "./components/hero/hero";
+
 
 export default function App() {
   const [active, setActive] = useState("home");
@@ -56,7 +58,7 @@ export default function App() {
               {content.map((item) => (
                 <li
                   key={item.id}
-                  className={`menu-item ${active === item.id ? "active" : ""}`}
+                  className={`menu-item ${active === item.id ? "active" : ""} ${item.color ? "" : "white"}`}
                   onClick={() => handleClick(item.id)}
                 >
                   {item.label}
@@ -66,9 +68,13 @@ export default function App() {
           </div>
         </div>
       </nav>
-
+      <Hero />
       {content.map((section) => (
-        <section id={section.id} key={section.id} className="section">
+        <section
+          id={section.id}
+          key={section.id}
+          className={`section ${section.color ? "" : ""}`}
+        >
           <h1>{section.title}</h1>
           <p>{section.text}</p>
         </section>
