@@ -7,16 +7,12 @@ export const content = [
   {
     id: "about",
     label: "About",
-    title: "About Us",
-    text: "We are a team of experts delivering high-quality services worldwide.",
     color: true
 
   },
   {
     id: "services",
     label: "Services",
-    title: "Our Services",
-    text: "We offer consulting, development, and strategy solutions.",
     color: true
 
   },
