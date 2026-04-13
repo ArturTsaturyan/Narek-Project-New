@@ -5,6 +5,7 @@ import Logo from "./abou.png";
 import Hero from "./components/hero/hero";
 import Services from "./components/services/services";
 import About from "./components/about/about";
+import Testimonials from "./components/testimnonials/testimonials";
 
 export default function App() {
   const [active, setActive] = useState("home");
@@ -99,6 +100,7 @@ export default function App() {
       <Hero />
       <About />
       <Services />
+      <Testimonials/>
 
       {extraSections.map((section) => (
         <section id={section.id} key={section.id} className="extra-section">
