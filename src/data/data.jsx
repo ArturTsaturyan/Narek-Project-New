@@ -1,5 +1,9 @@
 import avatar1 from "../assets/brown.jpg";
 import avatar2 from "../assets/jane.png";
+import icon1 from "../assets/why1.png";
+import icon2 from "../assets/why2.png";
+import icon3 from "../assets/why3.png";
+import icon4 from "../assets/why4.png";
 
 
 
@@ -71,5 +75,29 @@ export const testimonialsData = [
     image: avatar2,
     rating: 5,
     text: "Great service and excellent design sense. The final result was exactly what we were looking for.",
+  },
+];
+
+
+export const whyUsData = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Best in Development of Digital Products",
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "Fast turnaround and Quality Coding",
+  },
+  {
+    id: 3,
+    icon: icon3,
+    title: "Modern & Minimalistic Design Solutions",
+  },
+  {
+    id: 4,
+    icon: icon4,
+    title: "24/7 Online support & Communication",
   },
 ];

@@ -6,6 +6,7 @@ import Hero from "./components/hero/hero";
 import Services from "./components/services/services";
 import About from "./components/about/about";
 import Testimonials from "./components/testimnonials/testimonials";
+import WhyUs from "./components/whyus/whyus";
 
 export default function App() {
   const [active, setActive] = useState("home");
@@ -57,7 +58,9 @@ export default function App() {
     (item) =>
       item.id !== "home" &&
       item.id !== "about" &&
-      item.id !== "services"
+      item.id !== "services" &&
+      item.id !== "testimonials" &&
+      item.id !== "whyus"
   );
 
   return (
@@ -84,8 +87,9 @@ export default function App() {
                 {content.map((item) => (
                   <li
                     key={item.id}
-                    className={`menu-item ${active === item.id ? "active" : ""} ${item.color ? "" : "white"
-                      }`}
+                    className={`menu-item ${active === item.id ? "active" : ""} ${
+                      item.color ? "" : "white"
+                    }`}
                     onClick={() => handleClick(item.id)}
                   >
                     {item.label}
@@ -100,7 +104,8 @@ export default function App() {
       <Hero />
       <About />
       <Services />
-      <Testimonials/>
+      <Testimonials />
+      <WhyUs />
 
       {extraSections.map((section) => (
         <section id={section.id} key={section.id} className="extra-section">
