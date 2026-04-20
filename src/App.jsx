@@ -7,6 +7,7 @@ import Services from "./components/services/services";
 import About from "./components/about/about";
 import Testimonials from "./components/testimnonials/testimonials";
 import WhyUs from "./components/whyus/whyus";
+import Contact from "./components/contact/contact";
 
 export default function App() {
   const [active, setActive] = useState("home");
@@ -106,15 +107,7 @@ export default function App() {
       <Services />
       <Testimonials />
       <WhyUs />
-
-      {extraSections.map((section) => (
-        <section id={section.id} key={section.id} className="extra-section">
-          <div className="extra-content">
-            <h2>{section.title}</h2>
-            <p>{section.text}</p>
-          </div>
-        </section>
-      ))}
+      <Contact/>
 
       <button
         className={`scroll-top ${showScrollTop ? "show" : ""}`}

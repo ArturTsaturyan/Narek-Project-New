@@ -101,3 +101,35 @@ export const whyUsData = [
     title: "24/7 Online support & Communication",
   },
 ];
+
+import contact from "../assets/contact.png";
+import email from "../assets/email.png";
+import phone from "../assets/phone.png";
+
+
+
+export const contactInfo = [
+  {
+    icon: contact,
+    title: "Address",
+    text: "Babayan 22",
+    link: "https://www.google.com/maps/search/?api=1&query=Babayan+Street+22+Yerevan",
+  },
+  {
+    icon: email,
+    title: "E-mail",
+    text: "martirosyannarek844@gmail.com",
+    link: "https://mail.google.com/mail/u/1/#search/martirosyannarek844%40gmail.com",
+  },
+  {
+    icon: phone,
+    title: "Phone",
+    text: "+37491939959",
+    link: "tel:+37491939959",
+  },
+];
+
+export const contactInputs = [
+  { name: "email", type: "email", placeholder: "Email" },
+  { name: "phone", type: "text", placeholder: "Phone" },
+];
