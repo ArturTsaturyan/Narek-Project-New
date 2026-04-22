@@ -1,0 +1,146 @@
+/* ================= FOOTER ================= */
+
+.footer {
+  width: 100%;
+  background: #eef1f7;
+  border-top: 1px solid #d9dfeb;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-top-line {
+  min-height: 60px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #d9dfeb;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: #5f7394;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #138ca1;
+  outline: none;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-socials a {
+  color: #5f7394;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover,
+.footer-socials a:focus {
+  color: #138ca1;
+  outline: none;
+}
+
+.footer-bottom-line {
+  min-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6px 12px;
+}
+
+.footer-bottom-line p {
+  margin: 0;
+  font-size: 13px;
+  color: #8a98ab;
+}
+
+/* ================= FOOTER 992 ================= */
+
+@media (max-width: 992px) {
+  .footer-top-line {
+    padding: 14px 20px;
+    gap: 24px;
+  }
+
+  .footer-links {
+    gap: 22px;
+    justify-content: center;
+  }
+}
+
+/* ================= FOOTER 480 ================= */
+
+@media (max-width: 480px) {
+  .footer {
+    margin-top: 0;
+  }
+
+  .footer-container {
+    max-width: 302px;
+  }
+
+  .footer-top-line {
+    min-height: auto;
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 10px 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 2px;
+  }
+
+  .footer-socials a {
+    font-size: 18px;
+  }
+
+  .footer-bottom-line {
+    min-height: auto;
+    padding: 16px 12px;
+  }
+
+  .footer-bottom-line p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
