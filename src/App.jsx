@@ -8,6 +8,7 @@ import About from "./components/about/about";
 import Testimonials from "./components/testimnonials/testimonials";
 import WhyUs from "./components/whyus/whyus";
 import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 
 export default function App() {
   const [active, setActive] = useState("home");
@@ -88,9 +89,8 @@ export default function App() {
                 {content.map((item) => (
                   <li
                     key={item.id}
-                    className={`menu-item ${active === item.id ? "active" : ""} ${
-                      item.color ? "" : "white"
-                    }`}
+                    className={`menu-item ${active === item.id ? "active" : ""} ${item.color ? "" : "white"
+                      }`}
                     onClick={() => handleClick(item.id)}
                   >
                     {item.label}
@@ -107,8 +107,9 @@ export default function App() {
       <Services />
       <Testimonials />
       <WhyUs />
-      <Contact/>
-
+      <Contact />
+      <Footer />
+      
       <button
         className={`scroll-top ${showScrollTop ? "show" : ""}`}
         onClick={scrollToTop}
