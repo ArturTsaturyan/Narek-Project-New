@@ -56,14 +56,7 @@ export default function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const extraSections = content.filter(
-    (item) =>
-      item.id !== "home" &&
-      item.id !== "about" &&
-      item.id !== "services" &&
-      item.id !== "testimonials" &&
-      item.id !== "whyus"
-  );
+
 
   return (
     <div className="app">

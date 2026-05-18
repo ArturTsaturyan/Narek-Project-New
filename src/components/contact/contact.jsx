@@ -2,7 +2,7 @@ import { useState } from "react";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 import { contactInputs, contactInfo } from "../../data/data";
-import contact from "../../assets/contact.png";
+
 import "./contact.css";
 
 const schema = yup.object().shape({

@@ -33,6 +33,7 @@ header {
   width: 145px;
   margin-left: 80px;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 .kk {
@@ -127,7 +128,7 @@ header {
   max-width: 415px;
   font-size: 20px;
   line-height: 1.45;
-  color: #7082a0;
+  color: #334155;
 }
 
 .hero-btn {
@@ -728,13 +729,16 @@ header {
     position: fixed;
     inset: 0;
     background: #f4f4f4;
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: 0.35s;
     z-index: 4000;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .menu.open {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   .menu-header {
@@ -822,15 +826,23 @@ header {
 
   .hero-right {
     width: 100%;
-    min-height: 420px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 
   .hero-bg {
-    width: 58%;
+    width: 100%;
+    height: 70%;
+    top: auto;
+    bottom: 0;
   }
 
   .hero-img {
-    width: 620px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
   }
 
   .about {
@@ -970,15 +982,17 @@ header {
   }
 
   .hero-right {
-    min-height: 270px;
+    min-height: 300px;
   }
 
   .hero-bg {
-    width: 62%;
+    width: 100%;
+    height: 60%;
   }
 
   .hero-img {
-    width: 360px;
+    width: 90%;
+    max-width: 360px;
   }
 
   .about {
